@@ -5,14 +5,21 @@ function Profile ()  {
   return (
     <div>
       <div className="title-container">
-        <h2 className="section-title-perfil">Información del Perfil</h2>
+        <h2 className="section-title-profile-usua">
+          Información del Perfil
+        </h2>
       </div>
-      <main className='main-perfil'>
-        <div className="profile-container">
-          <form id="formulario" action="#" method="post">
+      <main className='container-profile-usua'>
+        <div className="profile-usua-container">
+          <form 
+          className="form-perfil-usua"
+          id="formulario" 
+          action="#" 
+          method="post">
+
             <div className="form-group">
-              <label className="datos" htmlFor="nombre">Nombre:</label>
-              <input className="datos2"
+              <label className="label-form-profile-usua" htmlFor="nombre">Nombre:</label>
+              <input className="input-form-profile-usua"
                 type="text"
                 id="nombre"
                 name="nombre"
@@ -21,8 +28,9 @@ function Profile ()  {
               />
             </div>
             <div className="form-group">
-              <label className="datos" htmlFor="apellido">Apellido:</label>
-              <input className="datos2"
+              <label className="label-form-profile-usua" htmlFor="apellido">Apellido:</label>
+              <input 
+              className="input-form-profile-usua"
                 type="text"
                 id="apellido"
                 name="apellido"
@@ -31,8 +39,9 @@ function Profile ()  {
               />
             </div>
             <div className="form-group">
-              <label className="datos" htmlFor="correo">Correo institucional:</label>
-              <input className="datos2"
+              <label className="label-form-profile-usua" htmlFor="correo">Correo institucional:</label>
+              <input 
+              className="input-form-profile-usua"
                 type="email"
                 id="correo"
                 name="correo"
@@ -41,18 +50,25 @@ function Profile ()  {
               />
             </div>
             <div className="form-group">
-              <label className="datos" htmlFor="clave">Clave:</label>
-              <input className="datos2"
+              <label className="label-form-profile-usua" htmlFor="clave">Clave:</label>
+              <input 
+              className="input-form-profile-usua"
                 type="password"
                 id="clave"
                 name="clave"
-                defaultValue="123456"
+                defaultValue={123456}
                 readOnly
               />
             </div>
             <div className="form-group">
-              <label className="datos" htmlFor="genero">Género:</label>
-              <select className="opciones" id="genero" name="genero" disabled>
+              <label className="label-form-profile-usua" htmlFor="genero">Género:</label>
+
+              <select 
+              className="select-form-profile-usua" 
+              id="genero" 
+              name="genero" 
+              disabled>
+
                 <option value>Seleccione una opción</option>
                 <option value="masculino" selected>
                   Masculino
@@ -62,8 +78,10 @@ function Profile ()  {
               </select>
             </div>
             <div className="form-group">
-              <label className="datos" htmlFor="rol">Rol:</label>
-              <select className="opciones" id="rol" name="rol" disabled>
+              <label className="label-form-profile-usua" htmlFor="rol">Rol:</label>
+
+              <select className="select-form-profile-usua" id="rol" name="rol" disabled>
+                
                 <option value>Seleccione una opción</option>
                 <option value="instructor">Instructor</option>
                 <option value="capacitador">Capacitador</option>

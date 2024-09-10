@@ -675,314 +675,36 @@ swal.fire title {
 }
 
 
-/*Informes css*/
-/* Estilo para los encabezados */
-.titulo1-informes {
-  text-align: center;
-  margin-top: 12vh;
-  margin-bottom: 0.5%;
-}
-
-.titulo2-informes {
-  text-align: center;
-  margin-top: 0;
-  font-size: 1rem;
-}
-
-/* Estilo para el contenido principal */
-.main-content {
-  margin-left: 250px;
-  width: calc(100% - 250px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Contenedor del formulario */
-.container {
-  background-color: #fff;
-  border: 1px solid #5CB85C;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: flex-start;
-  margin-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Estilo para los botones de fecha */
-.date-button, .select-button, .number-button {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background-color: #fff;
-  border: 1px solid #5CB85C;
-  border-radius: 8px;
-  padding: 0.75rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Etiquetas de los botones */
-.date-label, .select-label, .number-label {
-  font-size: 1rem;
-  margin-right: 1rem;
-}
-
-/* Inputs de fecha */
-.date-inputs {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.date-inputs .input-fecha {
-  width: 50px;
-  padding: 0.5rem;
-  border: 1px solid #5CB85C;
-  border-radius: 4px;
-  text-align: center;
-}
-
-/* Selector */
-.selector-informe {
-  padding: 0.5rem;
-  border: 1px solid #5CB85C;
-  border-radius: 4px;
-  font-size: 1rem;
-  background-color: #fff;
-}
-
-/* Input numérico */
-.numero-informe {
-  padding: 0.5rem;
-  border: 1px solid #5CB85C;
-  border-radius: 4px;
-  font-size: 1rem;
-  width: 150px;
-  background-color: #fff;
-}
-
-/* Estilo del botón de eliminar */
-.btn-eliminar {
-  background-color: #5CB85C;
-  color: #fff;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s;
-  margin-top: 10px;
-}
-
-.btn-eliminar:hover {
-  background-color: #d9534f;
-}
-
-/* Media queries para pantallas más pequeñas */
-@media (max-width: 1024px) {
-  .main-content {
-      margin-left: 0;
-      width: 100%;
-  }
-
-  .container {
-      width: 90%;
-  }
-
-  .date-inputs .input-fecha,
-  .selector-informe,
-  .numero-informe {
-      width: 100%; /* Asegura que los inputs y select ocupen el ancho completo en pantallas más pequeñas */
-  }
-}
-
-/* Media queries para pantallas muy pequeñas (móviles) */
-@media (max-width: 600px) {
-  .main-content {
-      margin-left: 0;
-      width: 100%;
-  }
-
-  .container {
-      width: 100%;
-      padding: 1rem; /* Ajusta el padding para pantallas pequeñas */
-  }
-
-  .date-button, .select-button, .number-button {
-      flex-direction: column;
-      gap: 0.5rem;
-      padding: 0.5rem;
-  }
-
-  .date-inputs {
-      flex-direction: column;
-  }
-
-  .date-inputs .input-fecha {
-      width: 100%;
-  }
-
-  .selector-informe {
-      width: 100%;
-  }
-
-  .numero-informe {
-      width: 100%;
-  }
-
-  .btn-eliminar {
-      font-size: 12px; /* Reduce el tamaño de la fuente del botón de eliminar en pantallas pequeñas */
-      padding: 4px 8px; /* Reduce el padding del botón de eliminar */
-  }
-}
-
-/* Media queries para pantallas más grandes (monitores de escritorio de alta resolución) */
-@media (min-width: 1600px) {
-  .main-content {
-      margin-left: 250px; /* Mantén el margen izquierdo fijo para pantallas muy grandes */
-      width: calc(100% - 250px);
-  }
-
-  .container {
-      width: 70%; /* Reduce el ancho del contenedor para aprovechar mejor el espacio */
-      padding: 2rem; /* Aumenta el padding interno para una mejor presentación */
-  }
-
-  .date-button, .select-button, .number-button {
-      padding: 1rem; /* Aumenta el padding para mejor visibilidad en pantallas grandes */
-  }
-
-  .date-inputs .input-fecha,
-  .selector-informe,
-  .numero-informe {
-      width: auto; /* Permite que los inputs y select se ajusten automáticamente a su contenido */
-  }
-
-  .btn-eliminar {
-      font-size: 16px; /* Aumenta el tamaño de la fuente del botón de eliminar para mejor visibilidad */
-      padding: 8px 16px; /* Aumenta el padding del botón de eliminar */
-  }
-}
-
-
-/*v_informes.css*/
-.swal2-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-}
-
-.swal2-html-container {
-  font-size: 18px;
-}
-.report-container {
-  text-align: center;
-  font-family: 'Work Sans Regular', sans-serif;
-  color: #333;
-}
-
-.report-container .texto-informe {
-  text-align: left;
-}
-
-.report-header { 
-  display: flex;
-  text-align: center;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #5CB85C;
-}
-
-.report-content {
-  margin-bottom: 20px;
-}
-
-.report-footer {
-  font-style: italic;
-  text-align: center;
-  border-top: 2px solid #5CB85C;
-  padding-top: 10px;
-  margin-top: 20px;
-}
-.download-button {
-  background-color: #5CB85C;
-  border: none;
-  color: white;
-  padding: 10px 10px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 10px;
-}
-.download-button .fa-fa-download {
-  border: none;
-}
-
-
 /*CALENDARIOUSUA*/
-/* Estilos para el contenido principal */
-.calendario-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  margin-top: 9vh; /* Espacio para la barra de navegación */
-  height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
-}
-
-/* Contenedor que agrupa el formulario y el calendario */
-/* Contenedor que agrupa el formulario y el calendario */
-.form-calendar-container {
-  display: grid;
-  justify-items: center;
-  margin: 20vh auto; /* Ajusta el margen superior para bajar el contenedor */
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 40px;
-  padding: 10px;
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  padding-bottom: 0;
-  box-sizing: content-box; /* Ajusta el box-sizing */
-}
-
 /* Estilos para el contenedor del formulario */
 .form-container {
   overflow-y: auto;
   overflow-x: hidden;
-  height: 450px;
+  /*height: 350px;*/
   padding: 20px; /* Ajusta el padding según el diseño */
   border: 2px solid #5cb85c;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Asegura que padding no afecte el tamaño total */
-  margin-top: 15vh; /* Ajusta el margen superior según sea necesario */
-  margin-left: 50vh; 
-  transform: translateX(-500px);/* Ajusta el margen izquierdo según sea necesario */
+  margin-top: 30vh; /* Ajusta el margen superior según sea necesario */
+  margin-left: 65%; 
+  transform: translateX(-160%);/* Ajusta el margen izquierdo según sea necesario */
 }
 
-.form-container h2 {
+.form-container .Titulo-Usua {
   display: flex;
   justify-content: center;
   margin-top: 0;
 }
 
-.form-container label {
+.form-container .label-ficha-usua {
   display: block;
   margin-bottom: 0.5rem;
   text-align: left; /* Mantiene los labels alineados a la izquierda */
 }
 
-.form-container input {
+.form-container .input-calenda-usua {
   width: calc(100% - 1rem);
   padding: 0.5rem;
   margin-bottom: 1rem;
@@ -990,7 +712,7 @@ swal.fire title {
   border-radius: 4px;
 }
 
-.form-container button {
+.form-container .boton-calendario {
   padding: 0.5rem 1rem;
   border: none;
   background-color: #5cb85c;
@@ -1001,7 +723,7 @@ swal.fire title {
   width: 100%;
 }
 
-.form-container button:hover {
+.form-container .boton-calendario:hover {
   background-color: #4cae4c;
 }
 
@@ -1018,13 +740,6 @@ swal.fire title {
   box-sizing: border-box; /* Asegura que padding no afecte el tamaño total */
   margin-top: 0; /* Ajusta el margen superior según sea necesario */
   margin-left: 0; /* Ajusta el margen izquierdo según sea necesario */
-}
-/* Estilos para la cuadrícula del calendario */
-.calendar-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 1px; /* Espacio entre los días */
-  margin-top: 1rem;
 }
 
 /* Estilos para los días del calendario */
@@ -1053,32 +768,29 @@ swal.fire title {
 
 
 
-
   /*PROFILEUSUA*/
   /* Estilo general para el contenedor principal */
-  main {
+  .container-profile-usua {
       display: flex;
       flex-direction: column;
       margin: 0 auto;
       padding: 20px;
       height: auto; /* Ajusta automáticamente la altura */
       width: 90vw; /* Ajusta el ancho */
-      max-width: 1000px; /* Ancho máximo del contenedor */
+      max-width: 1000px; 
+      border: 1px solid #5cb85c;
+      background-color: #fff;
+      box-sizing: border-box;/* Ancho máximo del contenedor */
       border-radius: 8px;
       box-sizing: border-box; /* Incluye padding y border en el tamaño total */
     }
     
-    /* Estilo para el contenedor del título */
-    .title-container-perfil{
+      /* Estilo del título */
+    .section-title-profile-usua{
       text-align: center;
-    }
-    
-    /* Estilo del título */
-    .section-title-perfil {
       font-size: 2.3em;
       margin-top: 20vh; /* Ajusta el espaciado superior */
       color: #2c3e50;
-
     }
     
     /* Estilo del contenedor del perfil */
@@ -1090,35 +802,19 @@ swal.fire title {
       height: auto; /* Ajusta automáticamente la altura */
       width: 90vw; /* Ajusta el ancho */
       max-width: 1000px; /* Ancho máximo del contenedor */
-      border: 1px solid #5cb85c;
-      border-radius: 8px;
-      background-color: #fff;
-      box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+       /* Incluye padding y border en el tamaño total */
     }
-    
-    /* Estilo para el contenedor del título */
-    .title-container {
-      text-align: center;
-    }
-    
+
     /* Estilo del título */
-    .section-title {
+    .section-title-profile-usua {
+      text-align: center;
       font-size: 2.5em;
       margin-top: 15vh; /* Ajusta el espaciado superior */
       color: #2c3e50;
     }
     
-    /* Estilo del contenedor del perfil */
-    .profile-container {
-      display: flex;
-      justify-content: center; /* Centra el formulario horizontalmente */
-      align-items: center; /* Centra el contenido verticalmente */
-      width: 100%; /* Ocupa todo el ancho del contenedor */
-      max-width: 970px; /* Ancho máximo del contenedor del formulario */
-    }
-    
     /* Estilo del formulario */
-    #formulario {
+    .profile-usua-container .form-perfil-usua{
       display: grid;
       grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
       gap: 35px; /* Espacio entre columnas */
@@ -1136,7 +832,7 @@ swal.fire title {
     }
     
     /* Estilo de las etiquetas */
-    .form-group .datos {
+    .form-group .label-form-profile-usua  {
       font-weight: 600;
       color: #333;
       margin-bottom: 5px; /* Espacio debajo de la etiqueta */
@@ -1144,34 +840,25 @@ swal.fire title {
     }
     
     /* Estilo de los campos de entrada */
-    .form-group .datos2,
-.form-group .opciones {
-  padding: 12px; /* Padding para mejor usabilidad */
-  font-size: 16px;
-  border: 1px solid #5cb85c;
-  border-radius: 8px;
-  width: 100%; /* Ocupa todo el ancho del contenedor */
-  box-sizing: border-box; /* Incluye padding y border en el tamaño total */
-  transition: border-color 0.3s ease;
-}
+    .form-group .input-form-profile-usua,
+    .form-group .select-form-profile-usua {
+      padding: 12px; /* Padding para mejor usabilidad */
+      font-size: 16px;
+      border: 1px solid #5cb85c;
+      border-radius: 8px;
+      width: 100%; /* Ocupa todo el ancho del contenedor */
+      box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+      transition: border-color 0.3s ease;
+    }
 
 /* Estilo para el enfoque en campos de entrada */
-.form-group .datos2:focus,
-.form-group .opciones:focus {
+.form-group .input-form-profile-usua:focus,
+.form-group .select-form-profile:focus {
   border-color: #5cb85c;
   outline: none;
 }
-    
-    /* Otros estilos como Media Queries se mantienen igual */
-    
-    
-    /* Estilo para el enfoque en campos de entrada */
-    .form-group .datos2:focus,
-    .form-group .opciones:focus {
-      border-color: #5cb85c;
-      outline: none;
-    }
-    
+ 
+
     /* Media queries para pantallas más pequeñas */
     @media (max-width: 768px) {
       .profile-container {
@@ -1195,8 +882,8 @@ swal.fire title {
           gap: 20px; /* Reduce el espacio entre los campos */
       }
     
-      .form-group .datos2,
-      .form-group .opciones {
+      .form-group .input-form-profile-usua,
+      .form-group .select-form-profile-usua {
           padding: 10px; /* Reduce el padding de los campos de entrada */
           font-size: 14px; /* Reduce el tamaño de la fuente */
       }
@@ -1220,8 +907,8 @@ swal.fire title {
           margin-top: 8vh; /* Ajusta el margen superior para centrar mejor el contenido */
       }
     
-      .form-group .datos2,
-      .form-group .opciones {
+      .form-group .input-form-profile-usua,
+      .form-group .select-form-profile-usua {
           padding: 18px; /* Mayor padding para campos de entrada */
           font-size: 20px; /* Incrementa el tamaño de la fuente */
       }
@@ -1247,8 +934,8 @@ swal.fire title {
           margin-top: 6vh; /* Ajusta el margen superior */
       }
     
-      .form-group .datos2,
-      .form-group .opciones {
+      .form-group .input-form-profile-admin,
+      .form-group .select-form-profile-admin {
           padding: 20px; /* Mayor padding para campos de entrada */
           font-size: 22px; /* Incrementa el tamaño de la fuente */
       }
@@ -1257,120 +944,90 @@ swal.fire title {
 
 
     /*PROGRAMACIONUSUA*/
+    /* General container to center the cards */
+.main-content {
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Centers the cards horizontally */
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    
-    header {
-      background-color: #333;
-      color: white;
-      padding: 10px;
-      text-align: center;
-    }
-    
-    nav {
-      padding: 10px;
-    }
-    
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      text-align: center;
-    }
-    
-    nav ul li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-    
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-    }
-    
-    .main-content {
-      padding: 20px;
-      display: flex;
-      justify-content: center; /* Centra las tarjetas horizontalmente */
-    }
-    
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      /*max-width: 1200px;*/
-      width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-      margin: 0 auto; /* Centra el contenedor de las tarjetas */
-      /*padding: 0 20px;*/ /* Añade espacio a los lados para evitar que el contenido toque los bordes */
-      box-sizing: border-box; /* Incluye el padding dentro del ancho total */
-    }
-    
-    .card {
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      width: 400px; /* Fija el ancho de las tarjetas a 400px */
-      box-sizing: border-box;
-      margin-top: 10%;
-      transform: translateX(260px); /* Mueve las tarjetas 50px a la izquierda */
-    }
-    
-    .card h2 {
-      margin-top: 0;
-      font-size: 1.5rem; /* Aumenta el tamaño de la fuente */
-      text-align: center; /* Centra el texto */
- 
-    }
-    
-    .cuadro-info {
-      margin-top: 10px;
-      padding: 15px;
-      background-color: #f9f9f9;
-      border: 2px solid #006400; /* Borde verde oscuro */
-      border-radius: 8px;
-      text-align: center;
-      transition: background-color 0.3s;
-    }
-    
-    .cuadro-info:hover {
-      background-color: #5cb85c;
-      color: white;
-    }
-    
-    .text-info {
-      list-style: none;
-      padding: 0;
-      margin: 15px 0 0 0;
-      font-size: 1rem;
-      color: #555;
-    }
-    
-    .text-info li {
-      margin-bottom: 10px;
-      line-height: 1.5;
-      font-weight: 300;
-      text-align: left; /* Alinea el texto a la izquierda dentro de las tarjetas */
-    }
-    
-    .text-info li::before {
-      content: "•"; /* Añade un punto al inicio de cada elemento de la lista */
-      color: #5cb85c;
-      margin-right: 8px;
-    }
+/* Container that holds the cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%; /* Ensures the container occupies the full width */
+  margin: 0 auto; /* Centers the card container */
+  box-sizing: border-box; /* Includes padding in the total width */
+}
 
-    
+/* Card design */
+.card {
+  background: white;
+  border-color: #006400;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 350px; /* Fixes the card width */
+  box-sizing: border-box;
+  margin-top: 10%; /* Adjusts the vertical spacing */
+  transform: translateX(100px); /* Moves the cards to the right */
+}
+
+/* Title styling */
+.card .tittle {
+  margin-top: 0;
+  font-size: 1.5rem; /* Increases the title font size */
+  text-align: center; /* Centers the title text */
+}
+
+/* Information box inside the card */
+.cuadro-info {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 2px solid #006400; /* Dark green border */
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for cuadro-info */
+.cuadro-info:hover {
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Text styling inside cuadro-info */
+.text-info {
+  list-style: none; /* Removes bullet points */
+  padding: 0;
+  margin: 15px 0 0 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Individual list item styling */
+.text-info .li-card-usua {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: 300;
+  text-align: left; /* Aligns the text to the left */
+}
+
+/* Adds a bullet point before each list item */
+.text-info .li-card-usua:before {
+  content: "•"; /* Adds a dot before each item */
+  color: #5cb85c; /* Green color for the bullet */
+  margin-right: 8px;
+}
+
 
 
 
 /*NAVUSUARIO*/
 body {
-  background-color: #5cb85c21;
+  background-color: #5cb85c;
   margin: 0;
   padding: 0;
   font-family: "Work Sans Regular", sans-serif;
@@ -1782,114 +1439,5 @@ nav ul li a:hover {
     padding: 6px 16px; /* Aumenta el padding del botón de cerrar sesión */
     font-size: 16px; /* Aumenta el tamaño de la fuente del botón de cerrar sesión */
   }
-}
-
-/*CALENDARIO DE ADMINISTRADOR*/
-.main-calendar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  margin-top: 9vh; /* Espacio para la barra de navegación */
-}
-
-/* Contenedor que agrupa el formulario y el calendario */
-.form-calendar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  max-width: 1000px;
-  width: 100%;
-}
-
-/* Estilos para el contenedor del formulario */
-.form-container {
-  background-color: #fff;
-  padding: 1.5rem;
-  margin-top: 5%;
-  border: 1px solid #5cb85c;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
-  flex: 1; /* Permite que el formulario se ajuste proporcionalmente */
-}
-
-.form-container .titulo1-calendario {
-  margin-top: 0;
-}
-
-.form-container .label-calendario {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.form-container .input-calendario {
-  width: calc(100% - 1rem);
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.form-container .buton-calendario {
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: #5cb85c;
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  width: 100%;
-}
-
-.form-container .buton-calendario:hover {
-  background-color: #4cae4c;
-}
-
-/* Estilos para el contenedor del calendario */
-.calendar-container {
-  background-color: #fff;
-  margin-left: 5%;
-  margin-top: 5%;
-  padding: 1.5rem;
-  border: 1px solid #5cb85c;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
-  flex: 1; /* Permite que el calendario se ajuste proporcionalmente */
-}
-
-/* Estilos para la cuadrícula del calendario */
-.calendar-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 1px; /* Espacio entre los días */
-}
-
-/* Estilos para los días del calendario */
-.calendar-day {
-  padding: 1rem;
-  text-align: center;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-/* Estilo para los días con eventos */
-.calendar-day.event {
-  background-color: #e0ffe0; /* Color de fondo para los días con eventos */
-  border-color: #5cb85c; /* Borde más oscuro para días con eventos */
-  color: #333;
-}
-
-.calendar-day:hover {
-  background-color: #f5f5f5;
-}
-
-.calendar-day.event:hover {
-  background-color: #d4edda; /* Color de fondo más claro para días con eventos */
 }
 

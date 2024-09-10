@@ -13,9 +13,9 @@ function Navbarinscap () {
     <img src= {logo} className="logo" alt="logo" />
     <nav>
       <ul>
-        <li><Link href="calendarioUsua.html" title="Ver calendario" className="active"><img src= {calendario} alt="Calendario" className="icono" />Calendario</Link></li>
-        <li><Link href="profileUsua.html" title="Perfil"><img src= {perfil} alt="Perfil" className="icono" />Perfil</Link></li>
-        <li><Link href="programacionUsua.html" title="Programaciones"><img src={programaciones} alt="Programaciones" className="icono" />Programaciones</Link></li>
+        <li><Link href="calendarioUsua.html" title="Ver calendario" className="active"><img src= {calendario} alt="Calendario" className="icono" /></Link></li>
+        <li><Link href="profileUsua.html" title="Perfil"><img src= {perfil} alt="Perfil" className="icono" /></Link></li>
+        <li><Link href="programacionUsua.html" title="Programaciones"><img src={programaciones} alt="Programaciones" className="icono" /></Link></li>
       </ul>
     </nav>
     <div className="cerrarSesion">

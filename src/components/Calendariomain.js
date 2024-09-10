@@ -5,13 +5,13 @@ function Calendariomain () {
          
       <main>
       <div className="form-container">
-        <h2>Seleccione Ficha y Coordinación</h2>
+        <h2 className="Titulo-Usua" >Seleccione Ficha y Coordinación</h2>
         <form id="selection-form">
-          <label htmlFor="ficha">Ficha:</label>
-          <input type="text" id="ficha" name="ficha" required />
-          <label htmlFor="coordinacion">Coordinación:</label>
-          <input type="text" id="coordinacion" name="coordinacion" required />
-          <button type="submit">Mostrar Calendario</button>
+          <label className="label-ficha-usua" htmlFor="ficha">Ficha:</label>
+          <input className="input-calenda-usua" type="text" id="ficha" name="ficha" required />
+          <label className="label-ficha-usua" htmlFor="coordinacion">Coordinación:</label>
+          <input className="input-calenda-usua" type="text" id="coordinacion" name="coordinacion" required />
+          <button className="boton-calendario" type="submit">Mostrar Calendario</button>
         </form>
       </div>
       <div
